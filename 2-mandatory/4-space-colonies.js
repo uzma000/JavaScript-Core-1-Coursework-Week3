@@ -15,7 +15,9 @@
   
 */
 
-function getSettlers() {}
+function getSettlers(arr) {
+  return arr.filter((planet) => /^A[\d\s\w+]*family/g.test(planet));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
